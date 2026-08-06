@@ -1,10 +1,10 @@
-from funciones import listas_empleados, agregar_empleado, eliminar_empleado, mostrar_resumen, guardar_csv, cargar_csv
+from funciones import listar_empleados, agregar_empleado, eliminar_empleado, mostrar_resumen, guardar_csv, cargar_csv
                         
 
 def mostrar_menu():
     print("\nSistema de Gestión de Datos de Empleados")
     print("1. Agregar empleado")
-    print("2. Listas empleados")
+    print("2. Listar empleados")
     print("3. Eliminar empleado")
     print("4. Mostrar resumen")
     print("5. Exportar datos")
@@ -43,6 +43,6 @@ def main():
         else:
             print("Opción no válida")
 
-    print("Sistema Gestión de Datos de Empleados")
+    print("Saliendo del sistema")
 
 main()

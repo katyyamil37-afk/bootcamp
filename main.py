@@ -1,13 +1,21 @@
-from funciones import listar_empleados, agregar_empleado, eliminar_empleado, mostrar_resumen, guardar_csv, cargar_csv
+from funciones import (
+    listar_empleados,
+    agregar_empleado,
+    eliminar_empleado,
+    buscar_empleado,
+    mostrar_resumen,
+    guardar_csv,
+    cargar_csv
+)
                         
-
 def mostrar_menu():
     print("\nSistema de Gestión de Datos de Empleados")
     print("1. Agregar empleado")
     print("2. Listar empleados")
     print("3. Eliminar empleado")
-    print("4. Mostrar resumen")
-    print("5. Exportar datos")
+    print("4. Buscar empleado")
+    print("5. Mostrar resumen")
+    print("6. Exportar datos")
     print("0. Salir")
 
 def main():
@@ -17,7 +25,7 @@ def main():
     while True:
         mostrar_menu()
 
-        opcion = input("Ingrese una opción del menú [0..5]: ")
+        opcion = input("Ingrese una opción del menú [0..6]: ")
 
         if opcion == "1":
             print("Agregar empleado")
@@ -31,13 +39,17 @@ def main():
 
             eliminar_empleado(empleados)
         elif opcion == "4":
-            print("Mostrar resumen")
-
-            mostrar_resumen(empleados, tecnologias)
+            print("Buscar empleado")
+            buscar_empleado(empleados)
+          
         elif opcion == "5":
-            print("Exportar datos")
+            print("Mostrar resumen")
+            mostrar_resumen(empleados, tecnologias)
 
+        elif opcion == "6":
+            print("Exportar datos")
             guardar_csv(empleados)
+            
         elif opcion == "0":
             break
         else:

@@ -3,7 +3,7 @@ import os
 
 AREAS = ('TI', 'Finanzas', 'RRHH', 'Comercial')
 
-def listar_empleados(empleados):
+def listas_empleados(empleados):
     if not empleados:
         print("No hay empleados registrados")
         return

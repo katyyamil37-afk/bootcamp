@@ -16,7 +16,6 @@ def listar_empleados(empleados):
 def agregar_empleado(empleados, tecnologias):
     identificador = int(input("Ingrese un identificador: "))
 
-    # Verificar si el ID ya existe
     for empleado in empleados:
         if empleado["id"] == identificador:
             print("Ese ID ya existe")
@@ -70,6 +69,22 @@ def eliminar_empleado(empleados):
             return
 
     print("No se encontró el empleado")
+
+
+def buscar_empleado(empleados):
+    identificador = int(input("Ingrese el ID del empleado: "))
+
+    for empleado in empleados:
+        if empleado["id"] == identificador:
+            print("\nEmpleado encontrado")
+            print(f"ID: {empleado['id']}")
+            print(f"Nombre: {empleado['nombre']}")
+            print(f"Edad: {empleado['edad']}")
+            print(f"Área: {empleado['area']}")
+            print(f"Tecnología: {empleado['tecnologia']}")
+            return
+
+    print("No se encontró el empleado.")
 
 
 def mostrar_resumen(empleados, tecnologias):

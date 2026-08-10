@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #0d6efd;
+}
+
+.wallet-card {
+  max-width: 500px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.filtro-select {
+  max-width: 300px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .wallet-card {
+    width: 100%;
+  }
+}

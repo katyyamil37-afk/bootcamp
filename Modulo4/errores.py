@@ -1,2 +1,0 @@
-class EmailInvalidoError(Exception):
-    pass

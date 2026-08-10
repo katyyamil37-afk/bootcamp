@@ -1,4 +1,4 @@
-// Saldo inicial de la wallet
+
 let saldo = Number(localStorage.getItem("saldo"));
 
 if (!saldo) {
@@ -13,10 +13,10 @@ function mostrarSaldo() {
 $(document).ready(function () {
   mostrarSaldo();
 
-  // Efecto sencillo con jQuery
+  
   $("#bienvenida").hide().fadeIn(1000);
 
-  // Inicio de sesión
+
   $("#loginForm").submit(function (evento) {
     evento.preventDefault();
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
     }
   });
 
-  // Realizar depósito
+  
   $("#depositForm").submit(function (evento) {
     evento.preventDefault();
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }
   });
 
-  // Agregar un nuevo contacto
+  
   $("#agregarContacto").click(function () {
     let nombre = $("#nuevoContacto").val();
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
     }
   });
 
-  // Simular envío de dinero
+ 
   $("#sendForm").submit(function (evento) {
     evento.preventDefault();
 
@@ -98,7 +98,7 @@ $(document).ready(function () {
     }
   });
 
-  // Filtrar movimientos
+  
   $("#filtro").change(function () {
     let tipo = $(this).val();
 
